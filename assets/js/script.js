@@ -100,3 +100,54 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+// Récupération des éléments de la modale
+const modal = document.getElementById("projectModal");
+const modalCloseBtn = document.querySelector(".close");
+const modalTitle = document.getElementById("modalTitle");
+const modalDescription = document.getElementById("modalDescription");
+
+// Récupération de tous les éléments de l'icône
+const iconBoxes = document.querySelectorAll(".project-item-icon-box");
+
+// Écouteurs d'événements pour chaque icône de projet
+iconBoxes.forEach((iconBox, index) => {
+  iconBox.addEventListener("click", function () {
+    // Mettez à jour le contenu de la modale en fonction du projet cliqué
+    const projectTitles = document.querySelectorAll(".project-title");
+    const projectDescriptions = [
+      "Création de la page d'accueil d'une agence de voyage avec une interface responsive utilisant HTML5 et CSS3. Intégration de maquettes Figma et développement de composants personnalisés pour une expérience utilisateur optimale.",
+
+      "Objectifs d'apprentissage : conception mobile-first, implémentation d'animations CSS, utilisation de Sass pour un code maintenable, et versionnement avec Git et GitHub.",
+
+      "Développement d'une page web dynamique pour un site d'architecte d'intérieur avec JavaScript. Interaction avec une API, création de pages dynamiques et utilisation d'outils comme Figma et Visual Studio Code.",
+
+      "Implémentation du front-end d'une application avec React et React Router. Développement de composants, gestion de la navigation et utilisation de données simulées à partir d'un fichier JSON.",
+
+      "Optimisation du référencement d'un site web en améliorant sa performance et son accessibilité. Analyse des problèmes, mise en œuvre d'améliorations et création d'un rapport détaillant les résultats avant/après.",
+
+      "Débuggage et finalisation d'un site one-page. Analyse du code, résolution de bugs avec les Chrome DevTools et React Developer Tools, documentation des tests, et gestion de projet avec Yarn.",
+
+      "Développement du front-end d'une application bancaire avec React et Redux. Intégration des appels API, création d'une interface utilisateur responsive et gestion de l'état global avec Redux.",
+
+      "Développement du projet **Menu Maker - Qwenta**, un outil en ligne pour la création et la personnalisation de menus par les restaurateurs. Le projet inclut la planification via un tableau Kanban et la mise en place d'une veille informatique pour rester informé des meilleures pratiques et technologies.",
+    ];
+
+    modalTitle.textContent = projectTitles[index].textContent;
+    modalDescription.textContent = projectDescriptions[index];
+
+    modal.style.display = "block"; // Ouvre la modale
+  });
+});
+
+// Fermeture de la modale lorsque le bouton de fermeture est cliqué
+modalCloseBtn.addEventListener("click", function () {
+  modal.style.display = "none"; // Ferme la modale
+});
+
+// Fermeture de la modale si l'utilisateur clique à l'extérieur de la modale
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none"; // Ferme la modale
+  }
+});

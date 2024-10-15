@@ -579,6 +579,53 @@ main {
   line-height: 1.6;
 }
 
+/* Styles de la modale */
+.modal {
+  display: none; /* Cachée par défaut */
+  position: fixed; /* Rester en place */
+  z-index: 1; /* Au-dessus des autres éléments */
+  left: 0;
+  top: 0;
+  width: 100%; /* Pleine largeur */
+  height: 100%; /* Pleine hauteur */
+  overflow: auto; /* Si besoin, permet de faire défiler */
+  background-color: rgba(0, 0, 0, 0.4); /* Noir avec transparence */
+}
+
+/* Contenu de la modale */
+.modal-content {
+  background: var(--eerie-black-2);
+  margin: 15% auto; /* Centre la modale */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Largeur */
+  border-radius: 20px;
+}
+.modal p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+#modalTitle {
+  color: white;
+}
+
+/* Bouton de fermeture */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* *
  * #testimonials-modal
  */
