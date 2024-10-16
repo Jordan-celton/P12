@@ -608,7 +608,7 @@ main {
   line-height: 1.6;
 }
 #modalTitle {
-  color: white;
+  color: var(--orange-yellow-crayola);
 }
 
 /* Bouton de fermeture */

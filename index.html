@@ -378,7 +378,7 @@
               <li class="skills-item">
                 <div class="title-wrapper">
                   <h5 class="h5">HTML / CSS</h5>
-                  <data value="60">60%</data>
+                  <data value="70">70%</data>
                 </div>
                 <div class="skill-progress-bg">
                   <div class="skill-progress-fill" style="width: 60%"></div>
@@ -408,7 +408,7 @@
               <li class="skills-item">
                 <div class="title-wrapper">
                   <h5 class="h5">Git / GitHub</h5>
-                  <data value="40">40%</data>
+                  <data value="60">60%</data>
                 </div>
                 <div class="skill-progress-bg">
                   <div class="skill-progress-fill" style="width: 40%"></div>
@@ -682,7 +682,12 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Me contacter</h3>
 
-            <form action="#" class="form" data-form>
+            <form
+              action="https://formspree.io/f/xnnqqgon"
+              method="POST"
+              class="form"
+              id="contactForm"
+            >
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -691,6 +696,7 @@
                   placeholder="Nom Prénom"
                   required
                   data-form-input
+                  id="fullname"
                 />
 
                 <input
@@ -700,6 +706,7 @@
                   placeholder="Adresse mail"
                   required
                   data-form-input
+                  id="email"
                 />
               </div>
 
@@ -709,9 +716,10 @@
                 placeholder="Votre Message"
                 required
                 data-form-input
+                id="message"
               ></textarea>
 
-              <button class="form-btn" type="submit" disabled data-form-btn>
+              <button class="form-btn" type="submit" id="submitBtn">
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Envoyer</span>
               </button>
