@@ -117,14 +117,14 @@ iconBoxes.forEach((iconBox, index) => {
   iconBox.addEventListener("click", function () {
     const projectTitles = document.querySelectorAll(".project-title");
     const projectDescriptions = [
-      "Création de la page d'accueil d'une agence de voyage avec une interface responsive utilisant HTML5 et CSS3. Intégration de maquettes Figma et développement de composants personnalisés pour une expérience utilisateur optimale.",
-      "Objectifs d'apprentissage : conception mobile-first, implémentation d'animations CSS, utilisation de Sass pour un code maintenable, et versionnement avec Git et GitHub.",
-      "Développement d'une page web dynamique pour un site d'architecte d'intérieur avec JavaScript. Interaction avec une API, création de pages dynamiques et utilisation d'outils comme Figma et Visual Studio Code.",
-      "Implémentation du front-end d'une application avec React et React Router. Développement de composants, gestion de la navigation et utilisation de données simulées à partir d'un fichier JSON.",
-      "Optimisation du référencement d'un site web en améliorant sa performance et son accessibilité. Analyse des problèmes, mise en œuvre d'améliorations et création d'un rapport détaillant les résultats avant/après.",
-      "Débuggage et finalisation d'un site one-page. Analyse du code, résolution de bugs avec les Chrome DevTools et React Developer Tools, documentation des tests, et gestion de projet avec Yarn.",
-      "Développement du front-end d'une application bancaire avec React et Redux. Intégration des appels API, création d'une interface utilisateur responsive et gestion de l'état global avec Redux.",
-      "Développement du projet **Menu Maker - Qwenta**, un outil en ligne pour la création et la personnalisation de menus par les restaurateurs.",
+      "Création de la page d'accueil d'une agence de voyage avec une interface responsive utilisant HTML5 et CSS3. Intégration de maquettes Figma et développement de composants personnalisés pour une expérience utilisateur optimale.\nLien vers le projet : https://github.com/Jordan-celton/P3",
+      "Objectifs d'apprentissage : conception mobile-first, implémentation d'animations CSS, utilisation de Sass pour un code maintenable, et versionnement avec Git et GitHub.\nLien vers le projet : https://github.com/Jordan-celton/P4",
+      "Développement d'une page web dynamique pour un site d'architecte d'intérieur avec JavaScript. Interaction avec une API, création de pages dynamiques et utilisation d'outils comme Figma et Visual Studio Code.\nLien vers le projet : https://github.com/Jordan-celton/P6",
+      "Implémentation du front-end d'une application avec React et React Router. Développement de composants, gestion de la navigation et utilisation de données simulées à partir d'un fichier JSON.\nLien vers le projet : https://github.com/Jordan-celton/P7",
+      "Optimisation du référencement d'un site web en améliorant sa performance et son accessibilité. Analyse des problèmes, mise en œuvre d'améliorations et création d'un rapport détaillant les résultats avant/après.\nLien vers le projet : https://github.com/Jordan-celton/P8",
+      "Débuggage et finalisation d'un site one-page. Analyse du code, résolution de bugs avec les Chrome DevTools et React Developer Tools, documentation des tests, et gestion de projet avec Yarn.\nLien vers le projet : https://github.com/Jordan-celton/P9",
+      "Développement du front-end d'une application bancaire avec React et Redux. Intégration des appels API, création d'une interface utilisateur responsive et gestion de l'état global avec Redux.\nLien vers le projet : https://github.com/Jordan-celton/P10-forked",
+      "Développement du projet **Menu Maker - Qwenta**, un outil en ligne pour la création et la personnalisation de menus par les restaurateurs.\nLien vers le projet : https://github.com/Jordan-celton/P11",
     ];
 
     modalTitle.textContent = projectTitles[index].textContent;
